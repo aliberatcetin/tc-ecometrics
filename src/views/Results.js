@@ -61,7 +61,7 @@ const Results = (props) => {
 
       <CCard className="mb-4">
         <CCardHeader>Mobility {" & "} Suppliers</CCardHeader>
-        <CCardBody className="metricCard" style={{backgroundColor:"black", color:"white"}}>
+        <CCardBody className="metricCard" style={{backgroundColor:"#F8F8F9"}}>
           <CRow>
             <CCol sm={4}>
               <div  className="border-start border-start-4 border-start-success py-1 px-3">
@@ -149,12 +149,12 @@ const Results = (props) => {
       <CCard className="mb-4">
         <CCardHeader>Mobility {" & "} Visitors</CCardHeader>
 
-        <CCardBody className="metricCard" style={{backgroundColor:"black", color:"white"}}>
+        <CCardBody className="metricCard" style={{backgroundColor:"#F8F8F9"}}>
           <CRow>
             <CCol sm={4}>
               <div className="border-start border-start-4 border-start-danger py-1 px-3">
                 <div className="fs-5 fw-semibold small">Mobility Circularity Score</div>
-                <div className="fs-5 fw-semibold">{mobility_circularity_score}%</div>
+                <div className="fs-5 fw-semibold">{mobility_circularity_score}</div>
               </div>
             </CCol>
             <CCol sm={4}>
@@ -197,7 +197,7 @@ const Results = (props) => {
               <CChartDoughnut
                 data={{
                   labels: multiple_chart_labels, datasets: [{
-                    backgroundColor: [colors[0], colors[1]],
+                    backgroundColor: ["#4A763D","#800000"],
                     data: multiple_chart_data
                   }]
                 }}
